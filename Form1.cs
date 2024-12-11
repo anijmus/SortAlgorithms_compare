@@ -162,6 +162,7 @@ namespace pr1
                 buttonStart.Enabled = true;
                 buttonStart.Text = "Start";
             }
+            Console.WriteLine("fdfdfd");
         }     
     }
 }
