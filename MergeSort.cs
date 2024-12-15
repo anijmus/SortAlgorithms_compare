@@ -10,69 +10,73 @@ namespace pr1
     {
         public override void Sort(int[] array)
         {
-            sortMerge(array);
+            MergeSorting(array, 0, array.Length - 1);
         }
 
-
-
-        private static void sortMerge(int[] tab)
+        private void MergeSorting(int[] array, int left, int right)
         {
-            if (tab.Length > 2)
+            if (left < right)
             {
-                int[] tab1 = new int[tab.Length / 2];
-                int[] tab2 = new int[tab.Length - tab1.Length];
+                int middle = (left + right) / 2;
 
-                for (int i = 0; i < tab.Length; i++)
-                {
-                    if (i < tab1.Length)
-                    {
-                        tab1[i] = tab[i];
-                    }
-                    else
-                    {
-                        tab2[i - tab1.Length] = tab[i];
-                    }
-                }
-                sortMerge(tab1);
-                sortMerge(tab2);
-
-                int i1 = 0;
-                int i2 = 0;
-                while (i1 < tab1.Length || i2 < tab2.Length)
-                {
-                    if (i1 < tab1.Length && i2 < tab2.Length && tab1[i1] < tab2[i2])
-                    {
-                        tab[i1 + i2] = tab1[i1];
-                        i1++;
-                    }
-                    else if (i1 < tab1.Length && i2 < tab2.Length && tab1[i1] >= tab2[i2])
-                    {
-                        tab[i1 + i2] = tab2[i2];
-                        i2++;
-                    }
-                    else if (i1 < tab1.Length)
-                    {
-                        tab[i1 + i2] = tab1[i1];
-                        i1++;
-                    }
-                    else if (i2 < tab2.Length)
-                    {
-                        tab[i1 + i2] = tab2[i2];
-                        i2++;
-                    }
-                }
-
-            }
-            else if (tab.Length == 2)
-            {
-                if (tab[0] > tab[1])
-                {
-                    int tmp = tab[0];
-                    tab[0] = tab[1];
-                    tab[1] = tmp;
-                }
+                MergeSorting(array, left, middle);
+                MergeSorting(array, middle + 1, right);
+                Merge(array, left, middle, right);
             }
         }
+
+        private void Merge(int[] array, int left, int middle, int right)
+        {
+            int leftSize = middle - left + 1;
+            int rightSize = right - middle;
+
+            int[] leftArray = new int[leftSize];
+            int[] rightArray = new int[rightSize];
+
+            for (int i = 0; i < leftSize; i++)
+            {
+                leftArray[i] = array[left + i];
+            }
+
+            for (int j = 0; j < rightSize; j++)
+            {
+                rightArray[j] = array[middle + 1 + j];
+            }
+
+            int iLeft = 0;
+            int iRight = 0;
+            int k = left;
+
+            while (iLeft < leftSize && iRight < rightSize)
+            {
+                if (leftArray[iLeft] <= rightArray[iRight])
+                {
+                    array[k] = leftArray[iLeft];
+                    iLeft++;
+                }
+                else
+                {
+                    array[k] = rightArray[iRight];
+                    iRight++;
+                }
+                k++;
+            }
+
+            while (iLeft < leftSize)
+            {
+                array[k] = leftArray[iLeft];
+                iLeft++;
+                k++;
+            }
+
+            while (iRight < rightSize)
+            {
+                array[k] = rightArray[iRight];
+                iRight++;
+                k++;
+            }
+        }
+
     }
 }
 
