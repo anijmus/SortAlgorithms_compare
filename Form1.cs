@@ -100,7 +100,6 @@ namespace pr1
                 {
                     totalTests+=selectedAlgorithms.Count();
                 }
-                Console.WriteLine(totalTests);
 
                 progressBar1.Maximum = totalTests;  
                 progressBar1.Value = 0;
