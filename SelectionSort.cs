@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace pr1
 {
@@ -11,21 +10,21 @@ namespace pr1
     {
         public override void Sort(int[] array)
         {
-            for (int i = 0; i < array.Length - 1; i++)
-            {
-                int min = i;
-                for (int j = i + 1; j < array.Length; j++)
-                {
-                    if (array[j] < array[min])
-                    {
-                        min = j;
-                    }
-                }
+            int n = array.Length;
 
-                int tmp = array[min];
-                array[min] = array[i];
-                array[i] = tmp;
-            }
+            for (int i = 0; i < n - 1; i++)
+            {
+                // Find the minimum element in unsorted array 
+                int min_idx = i;
+                for (int j = i + 1; j < n; j++)
+                    if (array[j] < array[min_idx])
+                        min_idx = j;
+
+                // Swap the found minimum element with the first element
+                int temp = array[min_idx];
+                array[min_idx] = array[i];
+                array[i] = temp;
+            }   
         }
     }
 }
