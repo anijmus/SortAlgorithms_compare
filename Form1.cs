@@ -163,6 +163,11 @@ namespace pr1
                 buttonStart.Text = "Start";
             }
             Console.WriteLine("fdfdfd");
-        }     
+        }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

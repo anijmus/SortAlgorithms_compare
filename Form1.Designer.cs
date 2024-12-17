@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.buttonStart = new System.Windows.Forms.Button();
             this.numericUpDownMaxSize = new System.Windows.Forms.NumericUpDown();
@@ -53,20 +53,20 @@
             // 
             // chart1
             // 
-            chartArea1.AxisX.Minimum = 0D;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            chartArea2.AxisX.Minimum = 0D;
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(858, 535);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(895, 535);
             this.chart1.TabIndex = 6;
             this.chart1.Text = "chart1";
             // 
@@ -74,7 +74,7 @@
             // 
             this.buttonStart.AutoSize = true;
             this.buttonStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStart.Location = new System.Drawing.Point(6, 472);
+            this.buttonStart.Location = new System.Drawing.Point(18, 472);
             this.buttonStart.Margin = new System.Windows.Forms.Padding(4);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(210, 50);
@@ -90,7 +90,7 @@
             0,
             0,
             0});
-            this.numericUpDownMaxSize.Location = new System.Drawing.Point(6, 89);
+            this.numericUpDownMaxSize.Location = new System.Drawing.Point(18, 89);
             this.numericUpDownMaxSize.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownMaxSize.Maximum = new decimal(new int[] {
             200000,
@@ -116,7 +116,7 @@
             // 
             this.listBoxElements.FormattingEnabled = true;
             this.listBoxElements.ItemHeight = 16;
-            this.listBoxElements.Location = new System.Drawing.Point(6, 163);
+            this.listBoxElements.Location = new System.Drawing.Point(18, 163);
             this.listBoxElements.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxElements.Name = "listBoxElements";
             this.listBoxElements.Size = new System.Drawing.Size(210, 84);
@@ -132,7 +132,7 @@
             "Selection sort",
             "Merge sort",
             "Quick sort"});
-            this.listBoxAlgorithms.Location = new System.Drawing.Point(6, 293);
+            this.listBoxAlgorithms.Location = new System.Drawing.Point(18, 293);
             this.listBoxAlgorithms.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxAlgorithms.Name = "listBoxAlgorithms";
             this.listBoxAlgorithms.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
@@ -141,7 +141,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(6, 435);
+            this.progressBar1.Location = new System.Drawing.Point(18, 435);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(210, 30);
             this.progressBar1.TabIndex = 11;
@@ -150,7 +150,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 134);
+            this.label1.Location = new System.Drawing.Point(16, 134);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(158, 25);
             this.label1.TabIndex = 12;
@@ -160,7 +160,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 60);
+            this.label2.Location = new System.Drawing.Point(16, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(166, 25);
             this.label2.TabIndex = 13;
@@ -170,7 +170,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(4, 264);
+            this.label3.Location = new System.Drawing.Point(16, 264);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 25);
             this.label3.TabIndex = 14;
@@ -210,7 +210,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.chart1);
             this.splitContainer1.Size = new System.Drawing.Size(1085, 535);
-            this.splitContainer1.SplitterDistance = 222;
+            this.splitContainer1.SplitterDistance = 185;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 7;
             // 

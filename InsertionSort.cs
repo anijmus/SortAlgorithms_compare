@@ -11,20 +11,20 @@ namespace pr1
         public override void Sort(int[] array)
         {
 
-            for(int posortowanedo = 1; posortowanedo < array.Length; posortowanedo++) 
+            for (int i = 1; i < array.Length; i++)
             {
-                int iddozamiany = posortowanedo;
+                int key = array[i];
+                int j = i - 1;
 
-                while (iddozamiany>0 && array[iddozamiany] < array[iddozamiany-1])
+                while (j >= 0 && array[j] > key)
                 {
-                    int tmp = array[iddozamiany];
-                    array[iddozamiany] = array[iddozamiany - 1];
-                    array[iddozamiany-1] = tmp;
-                    iddozamiany--;
-
+                    array[j + 1] = array[j];
+                    j = j - 1;
                 }
+
+                array[j + 1] = key;
+
             }
         }
-
-    }
+    }  
 }
