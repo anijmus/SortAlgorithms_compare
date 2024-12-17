@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pr1
 {
-    internal class QuickSort : Algorithms
+    public class QuickSort : Algorithms
     {
         public override void Sort(int[] array)
         {
@@ -26,7 +26,8 @@ namespace pr1
 
         private static int Partition(int[] arr, int left, int right)
         {
-            int pivot = arr[right];
+            int pivotIndex = (left + right) / 2; 
+            int pivot = arr[pivotIndex];
             int i = left - 1;
 
             for (int j = left; j < right; j++)
