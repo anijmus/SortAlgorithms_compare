@@ -52,7 +52,6 @@ namespace pr1
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
-           
             chart1.Series.Clear();
             chart1.Annotations.Clear();
             chart1.ChartAreas[0].RecalculateAxesScale(); 
@@ -100,7 +99,6 @@ namespace pr1
                 {
                     totalTests+=selectedAlgorithms.Count();
                 }
-                Console.WriteLine(totalTests);
 
                 progressBar1.Maximum = totalTests;  
                 progressBar1.Value = 0;
@@ -142,8 +140,9 @@ namespace pr1
                                 chart1.Series[alg.GetType().Name].Points.Add(dpt);
                             }
 
-                            progressBar1.PerformStep();
                             chart1.Series[alg.GetType().Name].Points.AddXY(i, time);
+
+                            progressBar1.PerformStep();
                             numerTestu++;
                             this.Text = $"Wykonano {numerTestu} testów";
                         }

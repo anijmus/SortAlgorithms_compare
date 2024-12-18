@@ -60,13 +60,12 @@
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(0, 0);
-            this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(895, 535);
+            this.chart1.Size = new System.Drawing.Size(625, 435);
             this.chart1.TabIndex = 6;
             this.chart1.Text = "chart1";
             // 
@@ -74,10 +73,9 @@
             // 
             this.buttonStart.AutoSize = true;
             this.buttonStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStart.Location = new System.Drawing.Point(18, 472);
-            this.buttonStart.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonStart.Location = new System.Drawing.Point(14, 384);
             this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(210, 50);
+            this.buttonStart.Size = new System.Drawing.Size(158, 41);
             this.buttonStart.TabIndex = 4;
             this.buttonStart.Text = "Start";
             this.buttonStart.UseVisualStyleBackColor = true;
@@ -90,8 +88,7 @@
             0,
             0,
             0});
-            this.numericUpDownMaxSize.Location = new System.Drawing.Point(18, 89);
-            this.numericUpDownMaxSize.Margin = new System.Windows.Forms.Padding(4);
+            this.numericUpDownMaxSize.Location = new System.Drawing.Point(14, 72);
             this.numericUpDownMaxSize.Maximum = new decimal(new int[] {
             200000,
             0,
@@ -103,7 +100,7 @@
             0,
             0});
             this.numericUpDownMaxSize.Name = "numericUpDownMaxSize";
-            this.numericUpDownMaxSize.Size = new System.Drawing.Size(209, 22);
+            this.numericUpDownMaxSize.Size = new System.Drawing.Size(157, 20);
             this.numericUpDownMaxSize.TabIndex = 8;
             this.numericUpDownMaxSize.ThousandsSeparator = true;
             this.numericUpDownMaxSize.Value = new decimal(new int[] {
@@ -115,44 +112,42 @@
             // listBoxElements
             // 
             this.listBoxElements.FormattingEnabled = true;
-            this.listBoxElements.ItemHeight = 16;
-            this.listBoxElements.Location = new System.Drawing.Point(18, 163);
-            this.listBoxElements.Margin = new System.Windows.Forms.Padding(4);
+            this.listBoxElements.Location = new System.Drawing.Point(14, 132);
             this.listBoxElements.Name = "listBoxElements";
-            this.listBoxElements.Size = new System.Drawing.Size(210, 84);
+            this.listBoxElements.Size = new System.Drawing.Size(158, 69);
             this.listBoxElements.TabIndex = 9;
             // 
             // listBoxAlgorithms
             // 
             this.listBoxAlgorithms.FormattingEnabled = true;
-            this.listBoxAlgorithms.ItemHeight = 16;
             this.listBoxAlgorithms.Items.AddRange(new object[] {
             "Bubble sort",
             "Insertion sort",
             "Selection sort",
             "Merge sort",
             "Quick sort"});
-            this.listBoxAlgorithms.Location = new System.Drawing.Point(18, 293);
-            this.listBoxAlgorithms.Margin = new System.Windows.Forms.Padding(4);
+            this.listBoxAlgorithms.Location = new System.Drawing.Point(14, 238);
             this.listBoxAlgorithms.Name = "listBoxAlgorithms";
             this.listBoxAlgorithms.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.listBoxAlgorithms.Size = new System.Drawing.Size(209, 100);
+            this.listBoxAlgorithms.Size = new System.Drawing.Size(158, 82);
             this.listBoxAlgorithms.TabIndex = 10;
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(18, 435);
+            this.progressBar1.Location = new System.Drawing.Point(14, 353);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(210, 30);
+            this.progressBar1.Size = new System.Drawing.Size(158, 24);
             this.progressBar1.TabIndex = 11;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 134);
+            this.label1.Location = new System.Drawing.Point(12, 109);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 25);
+            this.label1.Size = new System.Drawing.Size(128, 20);
             this.label1.TabIndex = 12;
             this.label1.Text = "Typ elementów";
             // 
@@ -160,9 +155,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 60);
+            this.label2.Location = new System.Drawing.Point(12, 49);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 25);
+            this.label2.Size = new System.Drawing.Size(138, 20);
             this.label2.TabIndex = 13;
             this.label2.Text = "Ilość elementów";
             // 
@@ -170,19 +166,19 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 264);
+            this.label3.Location = new System.Drawing.Point(12, 214);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 25);
+            this.label3.Size = new System.Drawing.Size(87, 20);
             this.label3.TabIndex = 14;
             this.label3.Text = "Algorytmy";
             // 
             // checkedListBox2
             // 
             this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Location = new System.Drawing.Point(161, 0);
-            this.checkedListBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.checkedListBox2.Location = new System.Drawing.Point(121, 0);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(9, 4);
+            this.checkedListBox2.Size = new System.Drawing.Size(8, 4);
             this.checkedListBox2.TabIndex = 1;
             // 
             // splitContainer1
@@ -190,7 +186,6 @@
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -209,9 +204,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.chart1);
-            this.splitContainer1.Size = new System.Drawing.Size(1085, 535);
+            this.splitContainer1.Size = new System.Drawing.Size(814, 435);
             this.splitContainer1.SplitterDistance = 185;
-            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 7;
             // 
             // label4
@@ -220,21 +214,21 @@
             this.label4.Dock = System.Windows.Forms.DockStyle.Top;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(223, 40);
+            this.label4.Size = new System.Drawing.Size(190, 34);
             this.label4.TabIndex = 15;
             this.label4.Text = "Analiza złożoności\r\nobliczeniowej algorytmów";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1085, 535);
+            this.ClientSize = new System.Drawing.Size(814, 435);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.checkedListBox2);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Porównanie algorytmów";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
