@@ -12,7 +12,7 @@ namespace pr1
         Rosnące,
         Malejące
     }
-    internal class Elements
+    public class Elements
     {
         private Random random = new Random();
         public int[] elements;

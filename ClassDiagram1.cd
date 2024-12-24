@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="pr1.Elements" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Elements.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pr1.Algorithms" Collapsed="true">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAQAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Algorithms.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pr1.BubbleSort" Collapsed="true">
+    <Position X="2.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BubbleSort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pr1.InsertionSort" Collapsed="true">
+    <Position X="6" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InsertionSort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pr1.MergeSort" Collapsed="true">
+    <Position X="7.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>MergeSort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pr1.QuickSort" Collapsed="true">
+    <Position X="9.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QuickSort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pr1.SelectionSort" Collapsed="true">
+    <Position X="4.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SelectionSort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="pr1.ElementType" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAACAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Elements.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
